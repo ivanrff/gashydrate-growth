@@ -1,0 +1,31 @@
+//Condições Experimentais
+R0 = 0.000355 ;        // Raio Inicial da Esfera de Gelo (m)
+p = 90125.9 ;         // Pressão Experimental(Pa)
+peq = 90125.9 ;         // Pressão (Pa)
+T =  276.15 ;        //  Temperatura Experimental (K)
+Teq = 280.85 ;         // Temperatura de Equilíbrio (K)
+Z = 1.151673 ;         // fator de compressibilidade do gás hóspede nas condições experimentais
+Zeq = 1.135841  ;       // fator de compressibilidade do gás hóspede no equilíbrio
+R = 8.3144621 ;         //  Constante dos Gases (J/mol-K)
+ttotal = 90 ;           //  Tempo total de Experimento (min)
+
+//Parâmetros dos Reagentes e do Hidrato
+X = 7.4951*(10^3) ;         // densidade molar do hidrato de gás (mol/m^3)
+W = 51*(10^3) ;         // densidade molar do gelo (mol/m^3)
+Mw = 18.015 ;        // massa molar da água (g/mol)
+Mh = 172.24505 ;        // massa molar do hidrato de gás (g/mol)
+Mg =  70.1 ;        // Massa molar do gás (g/mol)
+n =  5.67 ;        //  n (mols)
+eh = 0.15 ;      // Porosidade do hidrato de gás
+
+//Parâmetros da Formação
+Deff = [5*10^-8] ;      // Coeficiente efetivo de difusão de gás no hidrato de gás (m^2/s)
+K = [10^-28] ;         // taxa de formação de hidratos de gás a partir do gelo (m/mol-s)
+
+//Pontos Experimentais
+texpmin=[20;30;40;50;60;70;80;90] // Tempo dos pontos experimentais (min)
+ntexp=[0.4474;0.7659;0.8358;0.8316;0.8884;0.9144;0.9336;0.9554] // Valores de n(t) experimentais
+
+//Parâmetros de Newton-Raphson
+x0 = 0.0002;
+tol = 10^(-10);
